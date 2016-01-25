@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/run.js"></script>
+</head>
+<body>
+<canvas id="c" width="500" height="500"></canvas>
+<script>
+    var c = document.querySelector("#c");
+    var ctx = c.getContext("2d");
+
+    /*ctx.fillRect(100, 100, 100, 100);
+
+    ctx.strokeRect(50, 50, 50, 50);*/
+
+    ctx.strokeStyle = "#33433";
+
+    ctx.strokeRect(50, 50, 100, 100);
+    ctx.beginPath();
+    ctx.moveTo(75, 75);
+    ctx.lineTo(125, 75);
+    ctx.lineTo(125, 125);
+    ctx.fill();
+
+    ctx.fillStyle = "blue";
+    ctx.fill();
+
+    ctx.font = "36px Impact";
+    ctx.textAlign = "center";
+
+    ctx.fillStyle = "white";
+    ctx.strokeText("CANVAS MEMES!", c.width/2,40);
+
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 3;
+    ctx.strokeText("CANVAS MEMES!", c.width/2,40);
+
+
+
+    var image = new Image();
+
+    image.onload = function() {
+
+    }
+</script>
+</body>
+</html>
